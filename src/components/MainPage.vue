@@ -4,6 +4,9 @@
     <base-container>
       <main-page-actions/>
     </base-container>
+    <base-container>
+      <invoices-list/>
+    </base-container>
   </div>
 </template>
 

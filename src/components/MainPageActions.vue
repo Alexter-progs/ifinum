@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <h4>Actions</h4>
     <input type="button" class="btn" value="Add new"/>
   </div>
@@ -12,14 +12,6 @@ export default {
 </script>
 
 <style scoped>
-  .container {
-    padding: 1em;
-    background-color: #fff;
-    font-family: Helvetica,serif;
-    border: solid 1px #e4e7ea;
-    margin-top: 3em;
-  }
-
   h4 {
     margin: 1em 0 1em 0;
   }

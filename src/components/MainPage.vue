@@ -1,24 +1,30 @@
 <template>
   <div class="container">
     <base-page-title title="Invoices"/>
-    <main-page-actions/>
+    <base-container>
+      <main-page-actions/>
+    </base-container>
   </div>
 </template>
 
 <script>
 import BasePageTitle from './BasePageTitle'
 import MainPageActions from '@/components/MainPageActions'
+import InvoicesList from '@/components/InvoicesList'
+import BaseContainer from '@/components/BaseContainer'
 
 export default {
   name: 'MainPage',
-  components: {MainPageActions, BasePageTitle},
+  components: {BaseContainer, InvoicesList, MainPageActions, BasePageTitle},
   data () {
     return {
     }
   },
   comments: {
     basePageTitle: BasePageTitle,
-    mainPageActions: MainPageActions
+    mainPageActions: MainPageActions,
+    invoicesList: InvoicesList,
+    baseContainer: BaseContainer
   }
 }
 </script>

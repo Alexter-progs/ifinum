@@ -1,0 +1,1 @@
+export const INIT_INVOICES = 'INIT_INVOICES'

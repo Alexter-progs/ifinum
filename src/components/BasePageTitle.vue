@@ -23,7 +23,7 @@ export default {
 
   .text {
     flex-grow:0;
-    font-family: Helvetica sans-serif;
+    font-family: Helvetica, sans-serif;
 
     border-left: solid 5px #e4e7ea;
     height: 50px;
@@ -31,7 +31,7 @@ export default {
     padding-left: 20px;
     font-weight: bold;
     color: #7e8a9e;
-    font-size: 2em;
+    font-size: 1.25em;
   }
 
   .divider {

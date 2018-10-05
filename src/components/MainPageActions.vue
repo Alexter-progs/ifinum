@@ -1,7 +1,7 @@
 <template>
   <div>
     <h4>Actions</h4>
-    <input type="button" class="btn" value="Add new"/>
+    <router-link to="/invoice/create" class="btn">Add new</router-link>
   </div>
 </template>
 
@@ -22,6 +22,7 @@ export default {
     padding: 0.5rem 1rem;
     color: #fff;
     background-color: #0680ff;
+    text-decoration: none;
   }
 
   .btn:hover {

@@ -1,1 +1,2 @@
 export const INIT_INVOICES = 'INIT_INVOICES'
+export const CREATE_INVOICE = 'CREATE_INVOICE'

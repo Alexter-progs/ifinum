@@ -49,6 +49,7 @@ import BaseContainer from './BaseContainer'
 import AFormItem from 'ant-design-vue/es/form/FormItem'
 import ARow from 'ant-design-vue/es/grid/Row'
 import ACol from 'ant-design-vue/es/grid/Col'
+import { mapActions } from 'vuex'
 export default {
   name: 'InvoiceCreatePage',
   data () {
@@ -60,10 +61,14 @@ export default {
       e.preventDefault()
       this.form.validateFields((err, values) => {
         if (!err) {
-          console.log('Received values of form: ', values)
+          this.createInvoice(values)
+          this.$router.push('/')
         }
       })
-    }
+    },
+    ...mapActions({
+      createInvoice: 'createInvoice'
+    })
   },
   components: {ACol, ARow, AFormItem, BaseContainer, BasePageTitle}
 }
